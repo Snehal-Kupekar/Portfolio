@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.animated-image-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    
+  }
+  
+  .animation {
+    animation: upDownAnimation 2s infinite alternate;
+  }
+
+  .textStyle {
+    font-family: Poppins;
+  }
+  
+  @keyframes upDownAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-4%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+  /* button :hover */
+
+
+
+  @keyframes rotate {
+    0%{
+      transform: rotate(0deg);
+     }
+    100%{
+      transform: rotate(180deg)
+    }
+  }
+  
+  .hover-animation {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hover-animation:hover {
+    animation: rotate 2s linear;
+  }
