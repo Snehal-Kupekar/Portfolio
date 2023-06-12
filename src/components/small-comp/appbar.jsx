@@ -42,6 +42,13 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
   
+  const [activeTab, setActivetab] = React.useState('');
+
+  const handleTabClick = (page) =>{
+      setActivetab(page);
+      // handleCloseNavMenu();
+  }
+
   const resumeButtonHandle = () =>{
     window.open('https://shorturl.at/bkzEX', '_blank');
   }
@@ -145,14 +152,17 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() => handleTabClick(page)}
                 sx={{ my:2,
                    mx:1.5,
                    display: 'block' ,
                    fontFamily:'Poppins',
                    fontSize:'15px',
                    textDecoration: 'none',
-                   border: "2px solid #16141A",
+                   borderBottom: activeTab === page ? '3px solid #990720' : '2px solid #16141A',
+                  //  backgroundColor: activeTab === page ? '#990720' : 'transparent',
+                   color: activeTab === page ? '#fff' : '#7d94af',
+                  //  border: "2px solid #16141A",
                    '&:hover': {
                     backgroundColor: '#990720',
                   },
