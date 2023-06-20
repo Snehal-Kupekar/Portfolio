@@ -33,7 +33,7 @@
 
   
   .hover-animation {
-    transition: all 0.2s ease-in-out 0.5s;
+    transition: all 1s ease-in-out ;
   }
   
   .hover-animation:hover {
