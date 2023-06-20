@@ -8,5 +8,10 @@
   }
   
   .hover-translate:hover {
-    transform: translateY(-10px); /* Adjust the value as per your preference */
+    transform: translateY(-10px); 
+  
   }
+.card-size {
+  padding-left: 150px;
+  padding-right: 154px;
+}

@@ -7,14 +7,23 @@ const SkillItem = ({title , image , placement , styles}) =>{
     <Tooltip title={title} placement={placement} arrow>
                     <Paper
                       sx={{
-                        backgroundImage: `url(${image})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        border: "6px solid #fff",
+                        // backgroundImage: `url(${image})`,
+                        // backgroundSize: "cover",
+                        // backgroundPosition: "center",
+                        backgroundColor:"#232F34" ,
                         boxShadow:"0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
                       }}
-                      className={styles["hover-animation"]}
-                    ></Paper>
+                      
+                    >
+                      <Paper elevation={0} sx={{width:80 , height:80 , background:"red" , margin:"16px auto 0 auto" ,backgroundImage: `url(${image})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundColor:"#232F34" , }}
+                        className={styles["hover-animation"]}
+                        >
+
+                      </Paper>
+                    </Paper>
                   </Tooltip>
     </>
   )

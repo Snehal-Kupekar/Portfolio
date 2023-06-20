@@ -127,8 +127,8 @@ export default function Skills() {
                     flexWrap: "wrap",
                     "& > :not(style)": {
                       m: 3,
-                      width: 90,
-                      height: 90,
+                      width: 110,
+                      height: 110,
                     },
                   }}
                 >
