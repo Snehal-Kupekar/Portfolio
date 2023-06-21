@@ -114,19 +114,15 @@ export default function Project() {
             <ResponsiveAppBar />
           </Box>
           <Box sx={{ width: "100%" }}>
-            <Grid
-              container
-              spacing={2}
-              className={styles["card-size"]}
-            >
+            <Container maxWidth="lg">
+            <Grid container  justifyContent="center">
 
               {cards.map((card, index) => (
                 
-                  <Grid item xs={12} sm={6} md={3}  key={index}>
-                    {/* <Typography variant="h1">GRdid</Typography> */}
+                <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
                   <Card sx={{
                       maxWidth: 300 ,
-                      marginTop:10 ,
+                      marginTop:5 ,
                       boxShadow:"0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
                       marginLeft:"auto",
                       marginRight:"auto",
@@ -183,6 +179,7 @@ export default function Project() {
                 </Grid>
               ))}
             </Grid>
+            </Container>
           </Box>
         </Box>
       </ThemeProvider>
