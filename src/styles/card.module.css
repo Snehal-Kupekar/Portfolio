@@ -2,6 +2,32 @@
 
 .typeFont{
   font-family: Poppins;
+  
+}
+.cardTag {
+  width: 75px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2.5px solid #a50034;
+  background: #8c012d63;
+  color: rgb(203, 203, 203);
+  border-radius: 20px;
+  margin-top: 8px;
+ 
+}
+
+.cardContent {
+    /* height: 110px; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 261px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding-top: 20px; */
+    justify-content: space-evenly;
 }
 .hover-translate {
     transition: transform 0.3s ease;

@@ -59,7 +59,9 @@ function ResponsiveAppBar() {
     <AppBar position="static" style={{backgroundColor: '#16141A'}}>
   
         <Toolbar disableGutters>
-          <CircleOutlinedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 , paddingLeft:20}} />
+          <Box sx={{paddingLeft:20 , display:"flex"}}>
+          <CircleOutlinedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 , mt:0.3}} />
+          
           <Typography
             variant="h6"
             noWrap
@@ -67,6 +69,7 @@ function ResponsiveAppBar() {
             href="/"
             sx={{
               mr: 2,
+              // paddingLeft:20,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'Poppins',
               fontWeight: 600,
@@ -77,6 +80,7 @@ function ResponsiveAppBar() {
           >
            SNEHAL
           </Typography>
+          </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -118,7 +122,6 @@ function ResponsiveAppBar() {
               ))}
             <Button sx={{  
                 color:"#990720",
-                // border:"3px solid #990720" , 
                 marginLeft:"9px",
                 
                 }}
@@ -129,6 +132,7 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
           <CircleOutlinedIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1}} />
+          
           <Typography
             variant="h5"
             noWrap
@@ -159,10 +163,7 @@ function ResponsiveAppBar() {
                    fontFamily:'Poppins',
                    fontSize:'15px',
                    textDecoration: 'none',
-                   borderBottom: activeTab === page ? '3px solid #990720' : '2px solid #16141A',
-                  //  backgroundColor: activeTab === page ? '#990720' : 'transparent',
-                   color: activeTab === page ? '#fff' : '#7d94af',
-                  //  border: "2px solid #16141A",
+                   borderBottom: activeTab === page ? '2px solid #990720' : '2px solid #16141A',
                    '&:hover': {
                     backgroundColor: '#990720',
                   },

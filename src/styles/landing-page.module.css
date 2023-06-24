@@ -238,34 +238,31 @@
 
 }
 
-@media screen and (max-width : 1400px){
+
+@media screen and (max-width : 1350px){
   .waveIcon{
     display: none;
   }
   .selfImg {
-    position: absolute;
-    width: 435px;
-    height: 420px;
-    left: 859px;
-    top: 140px;
-    transition: transform 3s ease-in-out;
-  
-  
+    display: none;
+
+  }
+
+  .hometext{
+    text-align: center;
+    font-size: 14px;
+    left: 320px;
+  }
+  .welcomeToMy{
+    left: 270px;
   }
 }
-@media screen and (max-width : 960px){
+@media screen and (max-width : 900px){
   .waveIcon{
     display: none;
   }
   .selfImg {
-    position: absolute;
-    width: 435px;
-    height: 420px;
-    left: 359px;
-    top: 10px;
-    transition: transform 3s ease-in-out;
-  
-  
+    display: none;
   }
 }
 
