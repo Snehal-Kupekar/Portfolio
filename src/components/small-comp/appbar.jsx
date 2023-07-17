@@ -179,10 +179,13 @@ function ResponsiveAppBar() {
             ))}
             <Button sx={{  
                 color:"rgb(125, 148, 175)",
-                border:"3px solid #990720" , 
+                border:"1px solid rgb(125, 148, 175)" , 
                 marginTop:2 , marginBottom:2 ,
                 '&:hover':{ color:"#fff" , 
-                background:"#990720"}
+                background:"#990720",
+                border:"1px solid #990720" , 
+                transition: "all 0.3s ease-in-out",
+              }
                 }}
                 
                 onClick={resumeButtonHandle}
