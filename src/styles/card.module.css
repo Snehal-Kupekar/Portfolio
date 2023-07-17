@@ -6,11 +6,11 @@
 }
 .cardTag {
   width: 75px;
-  height: 25px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2.5px solid #a50034;
+  border: 2px solid #a50034;
   background: #8c012d63;
   color: rgb(203, 203, 203);
   border-radius: 20px;
@@ -30,11 +30,12 @@
     justify-content: space-evenly;
 }
 .hover-translate {
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
   }
   
   .hover-translate:hover {
     transform: translateY(-10px); 
+    
   
   }
 .card-size {

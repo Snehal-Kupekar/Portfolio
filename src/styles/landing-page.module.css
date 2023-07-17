@@ -257,6 +257,15 @@
     left: 270px;
   }
 }
+
+.link {
+  border : 1px solid salmon;
+}
+
+.link-active{
+  border: 1px solid #fff;
+}
+
 @media screen and (max-width : 900px){
   .waveIcon{
     display: none;

@@ -125,7 +125,7 @@ export default function Project() {
                       <CardHeader
                         title={card.title}
                         className={{ title: styles.typeFont }}
-                        sx={{ color: "#fff" }}
+                        sx={{ color: "#fff" , }}
                       />
                       <CardMedia
                         component="img"

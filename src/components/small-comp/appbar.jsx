@@ -6,16 +6,16 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import CircleOutlinedIcon from '@mui/icons-material/CircleOutlined';
 import { ThemeProvider } from '@mui/material';
-import { Link} from 'react-router-dom';
+import { Link, NavLink, useLocation} from 'react-router-dom';
 
 import themes from '../../styles/theme'
 import { useTheme } from "@mui/material/styles";
 
+import styles from '../../styles/Appbar.module.css'
 
 const pages = ['About', 'Skills', 'Projects'];
 
@@ -24,8 +24,10 @@ const pages = ['About', 'Skills', 'Projects'];
 function ResponsiveAppBar() {
   const theme = useTheme();
 
+  
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -42,17 +44,18 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
   
-  const [activeTab, setActivetab] = React.useState('');
+  
 
-  const handleTabClick = (page) =>{
-      setActivetab(page);
-      // handleCloseNavMenu();
-  }
-
+  
   const resumeButtonHandle = () =>{
     window.open('https://shorturl.at/bkzEX', '_blank');
   }
-
+  const location = useLocation();
+  
+  const isActiveClick = (path) =>{
+    return location.pathname === path ? styles.active : '';
+    console.log("location of appbar :",location.pathname);
+  }
   return (
     <ThemeProvider theme={themes}>
 
@@ -77,6 +80,7 @@ function ResponsiveAppBar() {
               color: 'inherit',
               textDecoration: 'none',
             }}
+         
           >
            SNEHAL
           </Typography>
@@ -152,32 +156,25 @@ function ResponsiveAppBar() {
           >
             SNEHAL
           </Typography>
+          
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } , justifyContent: 'flex-end', paddingRight:20}}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={() => handleTabClick(page)}
+              key={page}
                 sx={{ my:2,
                    mx:1.5,
                    display: 'block' ,
                    fontFamily:'Poppins',
                    fontSize:'15px',
                    textDecoration: 'none',
-                   borderBottom: activeTab === page ? '2px solid #990720' : '2px solid #16141A',
-                   '&:hover': {
-                    backgroundColor: '#990720',
-                  },
-                   
+                  
                   }}
+                 
               >
-               <Link style={{
-                textDecoration:"none" , 
-                color:"#7d94af", 
-                '&:hover': {
-                    color: '#fff',
-                  },
-                }} 
-                to={`/${page}`}>{page}</Link>
+               <NavLink 
+               to={`/${page}`}
+               className={[styles.nav, isActiveClick(`/${page}`)].join(' ')}
+                >{page}</NavLink>
               </Button>
             ))}
             <Button sx={{  
