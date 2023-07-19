@@ -124,8 +124,10 @@ export default function Project() {
                     >
                       <CardHeader
                         title={card.title}
-                        className={{ title: styles.typeFont }}
-                        sx={{ color: "#fff" , }}
+                        className={{ title: styles.titleFont }}
+                        sx={{ color: "#fff" , '&:hover':{
+                          background: "#a50034"
+                        } }}
                       />
                       <CardMedia
                         component="img"
@@ -159,7 +161,9 @@ export default function Project() {
                         target="_blank" // If you want to open the link in a new tab
                         rel="noopener noreferrer" // Recommended for security reasons when using target="_blank"
                         >
-                          <GitHubIcon sx={{ color: "#fff" }} />
+                          <GitHubIcon sx={{
+                             color: "#fff" ,
+                             }} />
                         </IconButton>
                         <ExpandMore
                           expand={expandedCardIndex}
