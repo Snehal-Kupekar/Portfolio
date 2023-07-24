@@ -6,13 +6,15 @@
 .leftPart{
 
     flex: 1;
-    padding: 20px 20px 100px 160px ;
+    padding: 20px 60px 20px 160px ;
     background-color: red;
 
 }
 .greyFont {
     color: #5b697d;
     font-family: var(--font-poppins);
+    line-height: 20px;
+    font-size: 14px;
 }
 
 .toptext{
@@ -30,6 +32,24 @@
 }
 .role span {
     color: #fff;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.btnResume {
+    background-color: var(--color-brown);
+    border-radius: 8px;
+    border: none;
+    padding: 14px 20px;
+    color: #fff;
+}
+
+.buttons img {
+    overflow: hidden;
+    margin-left: 10px;
 }
 .rightPart{
     flex: 1;

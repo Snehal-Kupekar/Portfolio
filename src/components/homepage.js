@@ -52,7 +52,7 @@ const Homepage = () => {
                 <span>MERN Stack Developer</span>
               </b>
             </p>
-            <p>
+            <p className={styles.greyFont}>
               As a final year CSE student at RAIT, I have honed my skills as a
               MERN developer, and have successfully created numerous projects
               utilizing this cutting-edge tech stack. Not only that, but I have
@@ -60,8 +60,8 @@ const Homepage = () => {
               where I am primarily responsible for game art and design.
             </p>
           </div>
-          <div>
-            <button onClick={resumeButtonHandle}>
+          <div className={styles.buttons}>
+            <button onClick={resumeButtonHandle} className={styles.btnResume }>
               <b>Resume</b>
               <img alt="" src="/vector.svg" />
             </button>
