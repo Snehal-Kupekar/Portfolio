@@ -40,13 +40,17 @@ const Homepage = () => {
     window.open(mailtoLink, "_blank");
   };
   return (
-    <div>
+    <div className={styles.mainWrap}>
       <ResponsiveAppBar />
       <div className={styles.homepageWrapper}>
         <div className={styles.leftPart}>
-          <div className={`${styles.toptext} ${styles.greyFont}` }>Welcome to my site</div>
+          <div className={`${styles.toptext} ${styles.greyFont}`}>
+            Welcome to my site
+          </div>
           <div>
-            <div className={`${styles.nametext} ${styles.greyFont}`}>I’m Snehal Kupekar</div>
+            <div className={`${styles.nametext} ${styles.greyFont}`}>
+              I’m Snehal Kupekar
+            </div>
             <p className={styles.role}>
               <b>
                 <span>MERN Stack Developer</span>
@@ -61,15 +65,21 @@ const Homepage = () => {
             </p>
           </div>
           <div className={styles.buttons}>
-            <button onClick={resumeButtonHandle} className={styles.btnResume }>
+            <button
+              onClick={resumeButtonHandle}
+              className={`${styles.btnRes} ${styles.homeBtn}`}
+            >
               <b>Resume</b>
               <img alt="" src="/vector.svg" />
             </button>
-            <button onClick={project}>
+            <button
+              onClick={project}
+              className={`${styles.btnProj} ${styles.homeBtn}`}
+            >
               <b>See my projects</b>
             </button>
           </div>
-          <div>
+          <div className={styles.bottomIcons}>
             <div className={styles.circle} onClick={githubBtn}>
               <GitHubIcon
                 sx={{ fontSize: "35px", color: "#16141A" }}
@@ -95,8 +105,12 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className={styles.rightPart}>photo</div>
-        {/* <img className={styles.waveIcon} alt="" src="/wave.svg" /> */}
+        <div className={styles.rightPart}>
+          <div className={styles.imgStyle}>
+            <img className={styles.selfImg} alt="" src="/homeImg.svg" />
+          </div>
+        </div>
+        <img className={styles.waveImage} alt="" src="/wave.svg" />
       </div>
     </div>
   );

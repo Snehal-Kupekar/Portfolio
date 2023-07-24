@@ -1,3 +1,4 @@
+
 .homepageWrapper{
     display: flex;
     flex-wrap: wrap-reverse;
@@ -7,7 +8,6 @@
 
     flex: 1;
     padding: 20px 60px 20px 160px ;
-    background-color: red;
 
 }
 .greyFont {
@@ -39,38 +39,61 @@
     margin-top: 5vh;
 }
 
-.btnResume {
-    background-color: var(--color-brown);
+.homeBtn {
     border-radius: 8px;
     border: none;
     padding: 14px 20px;
-    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
 }
-
+.btnRes {
+    background-color: var(--color-brown);
+    color: #fff;
+  
+}
+.btnProj{
+    color: var(--color-brown);
+    margin-left: 30px;
+    font-size: bold;
+}
 .buttons img {
     overflow: hidden;
     margin-left: 10px;
 }
+.bottomIcons{
+    display: flex;
+    margin-top: 80px;
+}
 .rightPart{
     flex: 1;
     padding: 20px;
-    background-color: blue;
+    
+    
 }
 
+.selfImg {
+    padding-top: 20px;
+    width: 535px;
+    height: 520px;
+    transition: transform 3s ease-in-out;
+  
+  
+  }
+  
+  .selfImg:hover{
+    transform: translateY(-10%);
+  }
 
 .circle{
     width: 40px;
     height: 40px;
-    
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background:url("../Image/js.png"); */
     background-color: var(--color-lightslategray);
-    
+    margin-right: 20px;
     cursor: pointer;
-    /* border: 6px solid #fff; */
     z-index: 2;
     
   
@@ -84,18 +107,18 @@
     /* Add any other styling for your container here */
   }
   
-  .wave-image {
+  .waveImage {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 100%;
-    max-width: 300px; /* Adjust the maximum width as needed */
+    max-width: 600px; /* Adjust the maximum width as needed */
     height: auto;
   }
   
   /* Media query for responsiveness */
   @media (max-width: 768px) {
-    .wave-image {
+    .waveeImage {
       max-width: 200px; /* Adjust the maximum width for smaller screens */
     }
   }
