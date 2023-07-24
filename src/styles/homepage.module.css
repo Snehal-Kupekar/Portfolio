@@ -1,0 +1,81 @@
+.homepageWrapper{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.leftPart{
+
+    flex: 1;
+    padding: 20px 160px;
+    background-color: red;
+
+}
+.greyFont {
+    color: #5b697d;
+    font-family: var(--font-poppins);
+}
+
+.toptext{
+    padding-top: 10vh;
+    line-height: 70px;
+}
+.nametext{
+    font-size: 50px;
+    line-height: 70px;
+}
+.role{
+    font-family: var(--font-poppins);
+    margin: 0;
+    font-size: 50px;
+}
+.role span {
+    color: #fff;
+}
+.rightPart{
+    flex: 1;
+    padding: 20px;
+    background-color: blue;
+}
+
+
+.circle{
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background:url("../Image/js.png"); */
+    background-color: var(--color-lightslategray);
+    
+    cursor: pointer;
+    /* border: 6px solid #fff; */
+    z-index: 2;
+    
+  
+  
+  }
+
+
+
+  .container {
+    position: relative;
+    /* Add any other styling for your container here */
+  }
+  
+  .wave-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    height: auto;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .wave-image {
+      max-width: 200px; /* Adjust the maximum width for smaller screens */
+    }
+  }
