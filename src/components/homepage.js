@@ -46,7 +46,7 @@ const Homepage = () => {
         <div className={styles.leftPart}>
           <div className={`${styles.toptext} ${styles.greyFont}` }>Welcome to my site</div>
           <div>
-            <p className={`${styles.nametext} ${styles.greyFont}`}>I’m Snehal Kupekar</p>
+            <div className={`${styles.nametext} ${styles.greyFont}`}>I’m Snehal Kupekar</div>
             <p className={styles.role}>
               <b>
                 <span>MERN Stack Developer</span>
