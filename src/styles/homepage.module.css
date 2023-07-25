@@ -49,13 +49,21 @@
 .btnRes {
     background-color: var(--color-brown);
     color: #fff;
+    transition: all 0.8s ease-in-out;
   
 }
+
+.btnRes:hover{
+    background-image:linear-gradient(120deg, rgba(165, 0, 52, 1) 15%, rgba(135, 0, 31, 1) 35%, rgba(105, 0, 8, 1) 50%, rgba(76, 0, 1, 1) 65%, rgba(47, 0, 2, 1) 85%, rgba(0, 0, 0, 1) 100%);
+    
+}
+
 .btnProj{
     color: var(--color-brown);
     margin-left: 30px;
     font-size: bold;
 }
+
 .buttons img {
     overflow: hidden;
     margin-left: 10px;
@@ -94,11 +102,13 @@
     background-color: var(--color-lightslategray);
     margin-right: 20px;
     cursor: pointer;
-    z-index: 2;
-    
-  
-  
-  }
+    z-index: 2; 
+    transition: all 1s ease-in-out;
+}
+
+.circle:hover{
+    animation: bounce 1s;
+}
 
 
 
@@ -120,5 +130,22 @@
   @media (max-width: 768px) {
     .waveeImage {
       max-width: 200px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+
+  @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
     }
   }

@@ -57,11 +57,12 @@ const Homepage = () => {
               </b>
             </p>
             <p className={styles.greyFont}>
-              As a final year CSE student at RAIT, I have honed my skills as a
-              MERN developer, and have successfully created numerous projects
-              utilizing this cutting-edge tech stack. Not only that, but I have
-              also dabbled in game development using the powerful Unity engine,
-              where I am primarily responsible for game art and design.
+              As a recent graduate in Computer Science and Engineering from
+              RAIT, I have honed my skills as a MERN developer and successfully
+              completed numerous projects using this cutting-edge tech stack.
+              Additionally, during my academic journey, I explored the exciting
+              world of game development using the powerful Unity engine, where I
+              primarily focused on game art and design.
             </p>
           </div>
           <div className={styles.buttons}>
