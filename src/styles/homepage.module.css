@@ -74,7 +74,10 @@
 }
 .rightPart{
     flex: 1;
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     
 }
@@ -127,10 +130,130 @@
   }
   
   /* Media query for responsiveness */
-  @media (max-width: 768px) {
-    .waveeImage {
-      max-width: 200px; /* Adjust the maximum width for smaller screens */
+
+  /* for small laptop */
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    .leftPart{
+      padding-right: 30px;
     }
+    .selfImg {
+      width: 450px;
+      height: 450px;
+      /* padding-left: 40px; */
+    
+    }
+    .greyFont{
+      font-size: 12px;
+    }
+    .nametext{
+      font-size: 45px;
+    }
+    .role span {
+      font-size: 45px;
+    }
+    
+  .homeBtn {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .circle{
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* for tablet */
+@media ((max-width :1023px) and (min-width:768px))
+  {
+    .waveImage{
+      display: none;
+    }
+    .leftPart{
+      padding-right: 160px;
+    }
+    .bottomIcons{
+      justify-content: center;
+    }
+    .buttons{
+      justify-content: center;
+    }
+    .greyFont{
+      text-align: center;
+      font-size: 13px;
+      /* line-height: 50px; */
+    }
+    .nametext{
+      text-align: center;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    .role span {
+      font-size: 40px;
+    }
+    .role{
+      line-height: 50px;
+      text-align: center;
+    }
+    
+  .homeBtn {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+    
+  }
+
+  /* for larger mobile */
+  @media ((max-width :768px) and (min-width:481px)){
+    .waveImage{
+      display: none;
+    }
+    .leftPart{
+      padding-left: 60px;
+      padding-right:60px ;
+    }
+
+  }
+
+  @media (max-width:480px) {
+   
+    .selfImg{
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 350px;
+      height: 350px;
+    }
+    .leftPart{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .waveImage{
+      display: none;
+    }
+    .greyFont{
+      text-align: center;
+      font-size: 10px;
+      /* line-height: 50px; */
+    }
+    .nametext{
+      text-align: center;
+      font-size: 30px;
+      line-height: 45px;
+    }
+    .role span {
+      font-size: 30px;
+    }
+    .role{
+      line-height: 45px;
+      text-align: center;
+    }
+    
+  .homeBtn {
+    padding: 6px 8px;
+    font-size: 8px;
+  }
+  .bottomIcons{
+    margin-top: 50px;
+  }
   }
 
   @keyframes bounce {

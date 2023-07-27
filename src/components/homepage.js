@@ -111,8 +111,8 @@ const Homepage = () => {
             <img className={styles.selfImg} alt="" src="/homeImg.svg" />
           </div>
         </div>
-        <img className={styles.waveImage} alt="" src="/wave.svg" />
       </div>
+        <img className={styles.waveImage} alt="" src="/wave.svg" />
     </div>
   );
 };

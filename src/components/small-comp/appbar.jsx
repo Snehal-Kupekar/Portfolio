@@ -62,7 +62,7 @@ function ResponsiveAppBar() {
     <AppBar position="static" style={{backgroundColor: '#16141A'}}>
   
         <Toolbar disableGutters>
-          <Box sx={{paddingLeft:20 , display:"flex"}}>
+          <Box sx={{paddingLeft:{xs: 0 , md:20} , display:"flex"}}>
           <CircleOutlinedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 , mt:0.3}} />
           
           <Typography
