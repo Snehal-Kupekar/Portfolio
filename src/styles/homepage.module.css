@@ -171,6 +171,9 @@
     .leftPart{
       padding-right: 160px;
     }
+    .toptext{
+      padding-top: 1vh;
+    }
     .bottomIcons{
       justify-content: center;
     }
@@ -211,20 +214,24 @@
       padding-left: 60px;
       padding-right:60px ;
     }
+    .toptext{
+      padding-top: 1vh;
+    }
 
   }
 
   @media (max-width:480px) {
    
     .selfImg{
-      padding-left: 20px;
-      padding-right: 20px;
-      width: 350px;
-      height: 350px;
+      display: none;
     }
     .leftPart{
-      padding-left: 30px;
-      padding-right: 30px;
+      
+      padding-left: 50px;
+      padding-right: 20px;
+    }
+    .toptext{
+      padding-top: 0;
     }
     .waveImage{
       display: none;
