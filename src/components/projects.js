@@ -67,7 +67,7 @@ export default function Project() {
       shortdiscription: "An app which enabled users to view a random quote or advice with each page refresh or interaction.",
       technology: "React Js , Html , CSS",
       gitLink: "https://github.com/Snehal-Kupekar/advice-app-react" ,
-      projectLink :"https://stellar-capybara-c02abb.netlify.app/",
+      projectLink :"https://quotes.snehaldeveloper.me",
     },
     {
       title: "Memories App",
@@ -75,7 +75,7 @@ export default function Project() {
       shortdiscription: "A platform to store your memories in the form of posts,allowing them to easily create, delete, and update their content.",
       technology: "React Js , Mongo db , Node js , ExpressJs , Redux ",
       gitLink: "https://github.com/Snehal-Kupekar/MemoryMedia-App" ,
-      projectLink :"https://memory-media-app.vercel.app/",
+      projectLink :"https://flashback.snehaldeveloper.me/",
     },
     {
       title: "Weather App",
@@ -83,15 +83,15 @@ export default function Project() {
       shortdiscription: "A real time weather forecasting application that provides accurate and up-to-date weatherinformation for every place",
       technology: "Express Js , Css , HTML , Javascript",
       gitLink: "https://github.com/Snehal-Kupekar/WeatherApp" ,
-      projectLink :"https://weather-app-woad-three.vercel.app/",
+      projectLink :"https://weatherapp.snehaldeveloper.me/",
     },
     {
       title: "CodeUnite",
       image: proj4,
       shortdiscription: "Developed a real-time collaborative coding platform, 'CodeUnit,' utilizing React and Node.js.",
       technology: "React Js, NodeJS , Express Js , Socket.io ",
-      gitLink: "https://github.com/Snehal-Kupekar/WeatherApp" ,
-      projectLink :"https://weather-app-woad-three.vercel.app/",
+      gitLink: "https://github.com/Snehal-Kupekar/CodeColab" ,
+      projectLink :"https://codeunite.snehaldeveloper.me",
     },
     
   ];
