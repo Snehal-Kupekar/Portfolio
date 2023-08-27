@@ -42,9 +42,10 @@
 .homeBtn {
     border-radius: 8px;
     border: none;
-    padding: 14px 20px;
+    padding: 12px 20px;
     cursor: pointer;
     font-size: 16px;
+    text-align: center;
 }
 .btnRes {
     background-color: var(--color-brown);

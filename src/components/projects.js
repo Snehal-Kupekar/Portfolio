@@ -33,6 +33,7 @@ import themes from "../styles/theme";
 import proj1 from "../Image/cards/advice.png";
 import proj2 from "../Image/cards/memories.png"
 import proj3 from "../Image/cards/weather.png"
+import proj4 from "../Image/cards/codeunite.png"
 
 import styles from "../styles/card.module.css";
 import { HelpCenterSharp } from "@mui/icons-material";
@@ -81,6 +82,14 @@ export default function Project() {
       image: proj3,
       shortdiscription: "A real time weather forecasting application that provides accurate and up-to-date weatherinformation for every place",
       technology: "Express Js , Css , HTML , Javascript",
+      gitLink: "https://github.com/Snehal-Kupekar/WeatherApp" ,
+      projectLink :"https://weather-app-woad-three.vercel.app/",
+    },
+    {
+      title: "CodeUnite",
+      image: proj4,
+      shortdiscription: "Developed a real-time collaborative coding platform, 'CodeUnit,' utilizing React and Node.js.",
+      technology: "React Js, NodeJS , Express Js , Socket.io ",
       gitLink: "https://github.com/Snehal-Kupekar/WeatherApp" ,
       projectLink :"https://weather-app-woad-three.vercel.app/",
     },
